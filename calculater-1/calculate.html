@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>calculate</title>
+   <link rel="stylesheet" href="./calculate.css">
+
+</head>
+
+<body>
+   <p style="text-align: center;font-size: 40px;font-weight: bold;">simple calcute</p>
+   <div class="border">
+      <div class="first">
+         <p>first_number</p>
+         <input type="text" id="first_btn">
+      </div>
+      <div class="second">
+         <p>second_number</p>
+         <input type="text" id="second_btn">
+      </div>
+      <div class="result">
+         <p>result</p>
+         <p id="result" style="margin-left:100px ;"></p>
+
+      </div>
+      <div class="opetator" style="display:flex ;">
+         <button id="zarb" onclick="multiplication()">*</button>
+         <button id="plus" onclick="divisionn()">/</button>
+         <button id="menha" onclick="pluss()">+</button>
+         <button id="division" onclick="subtraction()">-</button>
+      </div>
+
+   </div>
+   <div style="width: 100%;height: 10vh;background-color: brown;margin-top: 100px;"></div>
+
+   <script>
+
+
+      function multiplication() {
+         x = document.getElementById('first_btn').value;
+         y = document.getElementById('second_btn').value;
+
+         document.getElementById('result').innerHTML = x * y;
+      }
+      function subtraction() {
+         x = document.getElementById('first_btn').value;
+         y = document.getElementById('second_btn').value;
+
+         document.getElementById('result').innerHTML = x - y;
+      }
+
+      function divisionn() {
+         x = document.getElementById('first_btn').value;
+         y = document.getElementById('second_btn').value;
+
+         document.getElementById('result').innerHTML = x / y;
+      }
+
+      function pluss() {
+         x = Number(document.getElementById('first_btn').value);
+         y = Number(document.getElementById('second_btn').value);
+
+         document.getElementById('result').innerHTML = x + y;
+      }
+   </script>
+</body>
+
+</html>
